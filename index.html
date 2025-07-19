@@ -80,7 +80,7 @@
 
     <section id="contact" class="px-42 py-12">
       <h2 class="font-bold text-2xl mb-8">Message Us</h2>
-      <div class="flex justify-between align-middle">
+      <div class="flex justify-between align-top">
         <form class="flex flex-col gap-x-8">
           <div class="mb-4 flex justify-between gap-4">
             <label for="name">Name</label>
@@ -94,11 +94,11 @@
             <label>Jenis Kelamin</label>
             <div class="flex gap-4">
               <div>
-                <input required type="radio" name="jk" id="laki-laki" />
+                <input required type="radio" name="jk" id="laki-laki" value="Laki-laki" />
                 <label for="laki-laki">Laki-laki</label>
               </div>
               <div>
-                <input required type="radio" name="jk" id="perempuan" />
+                <input required type="radio" name="jk" id="perempuan" value="perempuan" />
                 <label for="perempuan">Perempuan</label>
               </div>
             </div>
@@ -111,7 +111,7 @@
           <button
             class="rounded-sm border-1 bg-yellow-300 hover:bg-yellow-500 transition-[background-color] delay-75 cursor-pointer py-1 px-3">Submit</button>
         </form>
-        <div class="border-1 py-4 px-2">
+        <div class="border-1 py-4 px-2 w-1/2 h-1/2 rounded-sm">
           <p class="mb-4 font-bold">Current Time : <span class="font-normal" id="curr-time"></span></p>
           <p class="font-bold">Nama : <span class="font-normal" id="inserted-name"></span></p>
           <p class="font-bold">Tanggal Lahir : <span class="font-normal" id="inserted-ttl"></span></p>
