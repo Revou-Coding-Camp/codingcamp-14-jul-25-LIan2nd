@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Company</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="scroll">
+  <!-- Header -->
+  <header class="py-6 px-8 border-t-1 border-b-1">
+    <nav class="flex justify-between align-middle">
+      <img
+        src="https://static.wixstatic.com/media/ab5dd5_2d3b5609069941659a1ef23abe746fe5%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/ab5dd5_2d3b5609069941659a1ef23abe746fe5%7Emv2.png"
+        alt="logo revou" class="w-[50px] h-[50px] object-center object-cover rounded-full">
+      <ul class="flex justify-around align-middle">
+        <li class="py-1 px-6 border-1 m-auto">
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="py-1 px-6 border-1 m-auto">
+          <a href="profile.html">
+            Our Profile
+          </a>
+        </li>
+        <li class="py-1 px-6 border-1 m-auto">
+          <a href="https://lian2nd.github.io/fgd-myportfolio-fswd-learningx/">
+            Portfolio
+          </a>
+        </li>
+        <li class="py-1 px-6 border-1 m-auto">
+          <a href="#contact">
+            Message Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="px-42 py-12 flex align-middle justify-around">
+      <div class="flex flex-col align-middle justify-center">
+        <h2 class="font-bold text-2xl">
+          Hi, <span id="person">Anonymous</span>! Welcome to Website
+        </h2>
+        <p>Ini adalah website latihan pertama dan terakhir xD</p>
+      </div>
+      <img
+        src="https://static.wixstatic.com/media/ab5dd5_308248b5274245d9b054fc402b1335aa~mv2.webp/v1/fit/w_1920,h_1080,q_90,enc_avif,quality_auto/ab5dd5_308248b5274245d9b054fc402b1335aa~mv2.webp"
+        alt="Revou" class="width-[1366px] h-[578px] object-center object-cover">
+    </section>
+    <!-- Hero end -->
+
+    <!-- Headquarter -->
+    <section class="border-t-1 border-b-1 px-42 py-12">
+      <h2 class="font-bold text-2xl mb-8 text-center">
+        Our Headquarter
+      </h2>
+      <div class="flex align-middle justify-around">
+        <div class="flex flex-col align-middle justify-center">
+          <div class="border-1 rounded-full w-[200px] h-[200px] mb-4"></div>
+          <p class="text-center">Jakarta</p>
+        </div>
+        <div class="flex flex-col align-middle justify-center">
+          <div class="border-1 rounded-full w-[200px] h-[200px] mb-4"></div>
+          <p class="text-center">Bandung</p>
+        </div>
+        <div class="flex flex-col align-middle justify-center">
+          <div class="border-1 rounded-full w-[200px] h-[200px] mb-4"></div>
+          <p class="text-center">Surabaya</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-42 py-12">
+      <h2 class="font-bold text-2xl mb-8">Message Us</h2>
+      <div class="flex justify-between align-middle">
+        <form class="flex flex-col gap-x-8">
+          <div class="mb-4 flex justify-between gap-4">
+            <label for="name">Name</label>
+            <input required class="border-1 rounded-sm w-[300px] py-1 p-3" type="text" name="name" id="name" />
+          </div>
+          <div class="mb-4 flex justify-between gap-4">
+            <label for="ttl">Tanggal Lahir</label>
+            <input required class="border-1 rounded-sm w-[300px] py-1 p-3" type="date" name="ttl" id="ttl" />
+          </div>
+          <div class="mb-4 flex gap-4">
+            <label>Jenis Kelamin</label>
+            <div class="flex gap-4">
+              <div>
+                <input required type="radio" name="jk" id="laki-laki" />
+                <label for="laki-laki">Laki-laki</label>
+              </div>
+              <div>
+                <input required type="radio" name="jk" id="perempuan" />
+                <label for="perempuan">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 flex justify-between gap-4">
+            <label for="pesan">Pesan</label>
+            <textarea required class="border-1 rounded-sm w-[300px] py-1 px-3" rows="6" name="pesan"
+              id="pesan"></textarea>
+          </div>
+          <button
+            class="rounded-sm border-1 bg-yellow-300 hover:bg-yellow-500 transition-[background-color] delay-75 cursor-pointer py-1 px-3">Submit</button>
+        </form>
+        <div class="border-1 py-4 px-2">
+          <p class="mb-4 font-bold">Current Time : <span class="font-normal" id="curr-time"></span></p>
+          <p class="font-bold">Nama : <span class="font-normal" id="inserted-name"></span></p>
+          <p class="font-bold">Tanggal Lahir : <span class="font-normal" id="inserted-ttl"></span></p>
+          <p class="font-bold">Jenis Kelamin : <span class="font-normal" id="inserted-jk"></span></p>
+          <p class="font-bold">Pesan : <span class="font-normal" id="inserted-pesan"></span></p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Headquarter end -->
+  </main>
+  <!-- Main end -->
+
+  <!-- Footer -->
+  <footer class="py-6 px-8 text-end border-t-1">
+    <small>Created by L</small>
+  </footer>
+  <!-- Footer -->
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- custom script -->
+  <script src="javascript/index.js"></script>
+</body>
+
+</html>
