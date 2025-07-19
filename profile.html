@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Company | Profile</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    .mission-card {
+      transition: transform 0.3s ease;
+    }
+
+    .mission-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-item {
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .value-item:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+    }
+  </style>
+</head>
+
+<body class="scroll">
+  <!-- Header -->
+  <header class="py-4 px-0 md:py-6 md:px-8 border-t-1 border-b-1">
+    <nav class="flex flex-col align-middle md:flex-row md:justify-between md:align-middle">
+      <img
+        src="https://static.wixstatic.com/media/ab5dd5_2d3b5609069941659a1ef23abe746fe5%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/ab5dd5_2d3b5609069941659a1ef23abe746fe5%7Emv2.png"
+        alt="logo revou" class="w-[50px] h-[50px] m-auto mb-4 md:m-0 object-center object-cover rounded-full">
+      <ul class="flex justify-around align-middle">
+        <li class="py-0 px-1 sm:py-1 sm:px-4 md:px-6 border-1 m-auto">
+          <a class="text-nowrap" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="py-0 px-1 sm:py-1 sm:px-4 md:px-6 border-1 m-auto">
+          <a class="text-nowrap" href="profile.html">
+            Our Profile
+          </a>
+        </li>
+        <li class="py-0 px-1 sm:py-1 sm:px-4 md:px-6 border-1 m-auto">
+          <a class="text-nowrap" href="https://lian2nd.github.io/fgd-myportfolio-fswd-learningx/">
+            Portfolio
+          </a>
+        </li>
+        <li class="py-0 px-1 sm:py-1 sm:px-4 md:px-6 border-1 m-auto">
+          <a class="text-nowrap" href="index.html#contact">
+            Message Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <section class="text-center py-12">
+      <h1 class="text-4xl font-bold mb-4">About RevoU</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        RevoU adalah platform pendidikan teknologi terkemuka di Asia Tenggara yang berkomitmen untuk membekali talenta
+        digital dengan keterampilan masa depan.
+      </p>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-12 border-t border-gray-200">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+          <p class="text-gray-700 mb-4">
+            Didirikan pada tahun 2019, RevoU telah membantu ribuan siswa menguasai keterampilan digital yang dibutuhkan
+            di era modern ini.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Dengan pendekatan pembelajaran yang praktis dan berbasis proyek, kami mempersiapkan lulusan untuk langsung
+            berkontribusi di industri.
+          </p>
+          <div class="grid grid-cols-3 gap-4 mt-8">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600">10K+</div>
+              <div class="text-gray-600">Students</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600">85%</div>
+              <div class="text-gray-600">Placement Rate</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600">5</div>
+              <div class="text-gray-600">Countries</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://static.wixstatic.com/media/ab5dd5_308248b5274245d9b054fc402b1335aa~mv2.webp"
+            alt="RevoU Team" class="rounded-lg shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-12 border-t border-gray-200 bg-gray-50">
+      <h2 class="text-3xl font-bold mb-12 text-center">Our Vision & Mission</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="mission-card bg-white p-8 rounded-lg shadow-md">
+          <div class="text-blue-600 text-5xl mb-4">👁️</div>
+          <h3 class="text-xl font-bold mb-4">Vision</h3>
+          <p class="text-gray-700">
+            Menjadi platform pendidikan teknologi terdepan di Asia Tenggara yang membuka akses terhadap peluang karir
+            digital bagi semua orang.
+          </p>
+        </div>
+        <div class="mission-card bg-white p-8 rounded-lg shadow-md">
+          <div class="text-blue-600 text-5xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-4">Mission</h3>
+          <p class="text-gray-700">
+            Memberdayakan individu dengan keterampilan digital praktis melalui kurikulum berbasis industri, mentor
+            profesional, dan komunitas yang mendukung.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-12 border-t border-gray-200">
+      <h2 class="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 border border-gray-200 rounded-lg">
+          <h3 class="text-xl font-bold mb-3 text-blue-600">Student Success</h3>
+          <p>Kesuksesan siswa adalah prioritas utama kami dalam setiap keputusan yang kami buat.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-lg">
+          <h3 class="text-xl font-bold mb-3 text-blue-600">Excellence</h3>
+          <p>Kami selalu berusaha memberikan yang terbaik dalam kualitas pendidikan dan layanan.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-lg">
+          <h3 class="text-xl font-bold mb-3 text-blue-600">Innovation</h3>
+          <p>Terus berinovasi dalam metode pembelajaran untuk memenuhi kebutuhan industri.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="py-12 border-t border-gray-200 bg-gray-50">
+      <h2 class="text-3xl font-bold mb-12 text-center">Our Programs</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-3">Full Stack Web Development</h3>
+          <p class="text-gray-700 mb-4">Pelajari pengembangan website dari frontend hingga backend dalam 16 minggu.</p>
+          <ul class="space-y-2">
+            <li class="value-item">HTML, CSS, JavaScript</li>
+            <li class="value-item">React.js & Node.js</li>
+            <li class="value-item">Database & Deployment</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-3">Data Analytics</h3>
+          <p class="text-gray-700 mb-4">Kuasi analisis data dengan Python, SQL, dan visualisasi data.</p>
+          <ul class="space-y-2">
+            <li class="value-item">Python untuk Data Science</li>
+            <li class="value-item">SQL & Database</li>
+            <li class="value-item">Tableau & Data Storytelling</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+          <p class="text-gray-700 mb-4">Pelajari strategi pemasaran digital terbaru untuk bisnis modern.</p>
+          <ul class="space-y-2">
+            <li class="value-item">SEO & Content Marketing</li>
+            <li class="value-item">Social Media & Ads</li>
+            <li class="value-item">Analytics & Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-12 border-t border-gray-200">
+      <h2 class="text-3xl font-bold mb-12 text-center">Leadership Team</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="border-1 rounded-full w-[200px] h-[200px] mb-4 m-auto"></div>
+          <h3 class="text-xl font-bold">Akuu</h3>
+          <p class="text-gray-600">Founder & CEO</p>
+        </div>
+        <div class="text-center">
+          <div class="border-1 rounded-full w-[200px] h-[200px] mb-4 m-auto"></div>
+          <h3 class="text-xl font-bold">Kamuu</h3>
+          <p class="text-gray-600">Founder & CEO's Wife</p>
+        </div>
+        <div class="text-center">
+          <div class="border-1 rounded-full w-[200px] h-[200px] mb-4 m-auto"></div>
+          <h3 class="text-xl font-bold">Kitaa</h3>
+          <p class="text-gray-600">Founder & CEO & Founder & CEO's Wife</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Main end -->
+
+  <!-- Footer -->
+  <footer class="py-6 px-8 text-end border-t-1 bg-gray-100">
+    <small>Created by L</small>
+  </footer>
+  <!-- Footer -->
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- custom script -->
+  <script src="javascript/index.js"></script>
+</body>
+
+</html>
