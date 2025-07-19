@@ -7,6 +7,7 @@ $(document).ready(function () {
     const ttl = $('#ttl').val();
     const jk = $('input[name="jk"]:checked').val();
     const pesan = $('#pesan').val();
+    const sender = $('#sender');
 
     // Validasi form
     if (!name || !ttl || !jk || !pesan) {
@@ -24,11 +25,30 @@ $(document).ready(function () {
     $('#curr-time').text(now.toLocaleString());
 
     this.reset();
+    $('html, body').animate({
+      'scrollTop': sender.offset().top
+    }, 800, 'swing', function () {
+      window.location.hash = "sender";
+    });
   });
 
   // live update nama di hero
   $('#name').on('input', function () {
     const name = $(this).val();
     $('#person').text(name || 'Anonymous');
+  });
+
+  // Smooth scroll for
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+
+    var target = this.hash;
+    var $target = $(target);
+
+    $('html, body').animate({
+      'scrollTop': $target.offset().top
+    }, 800, 'swing', function () {
+      window.location.hash = target;
+    });
   });
 });
